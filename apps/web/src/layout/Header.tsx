@@ -17,7 +17,7 @@ export default function Header() {
           <img
             src="/react.svg"
             alt="Website logo"
-            className="object-contain max-h-full py-2"
+            className="object-contain max-h-full py-2 animate-spin-slow"
           />
         </NavLink>
       </div>

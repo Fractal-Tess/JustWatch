@@ -1,0 +1,65 @@
+/* Theme toggle classes */
+.theme-toggle-btn {
+  --transition-duration-long: 0.4s;
+  --ease-in: cubic-bezier(0.25, 0, 0.3, 1);
+  --ease-out: cubic-bezier(0, 0, 0, 1);
+  --ease-eleastic-1: cubic-bezier(0.5, 1.25, 0.75, 1.25);
+  --ease-eleastic-2: cubic-bezier(0.5, 1.5, 0.75, 1.25);
+}
+
+svg .moon,
+svg .sun,
+svg .sun-beams {
+  transform-origin: center center;
+}
+
+.light svg .sun {
+  transform: scale(1.75);
+}
+
+.light svg .sun-beams {
+  opacity: 0;
+}
+
+.light svg .moon > circle {
+  transform: translateX(-7px);
+}
+
+.light svg .moon > circle {
+  transform: translateX(0);
+  cx: 17;
+}
+
+svg .sun {
+  transition: transform var(--transition-duration-long) var(--ease-eleastic-1);
+}
+
+svg .sun-beams {
+  transition: transform var(--transition-duration-long) var(--ease-eleastic-2),
+    opacity var(--transition-duration-long) var(--ease-in);
+}
+
+svg .moon > circle {
+  transition: transform calc(var(--transition-duration-long) / 2)
+    var(--ease-out);
+}
+
+svg .moon > circle {
+  transition: cx calc(var(--transition-duration-long) / 2) var(--ease-out);
+}
+
+.light svg .sun {
+  transform: scale(1.75);
+  transition-timing-function: var(--ease-in);
+  transition-duration: calc(var(--transition-duration-long) / 2);
+}
+
+.light svg .sun-beams {
+  transform: rotateZ(-25deg);
+  transition-duration: calc(var(--transition-duration-long) / 3);
+}
+
+.light svg .moon > circle {
+  transition-delay: calc(var(--transition-duration-long) / 2);
+  transition-duration: var(--transition-duration-long);
+}

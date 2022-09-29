@@ -1,5 +1,5 @@
 import '$styles';
-import './webtorrent.min.js';
+import '$webtorrent';
 import App from './App';
 import react from 'react';
 import ReactDOM from 'react-dom/client';

@@ -11,7 +11,8 @@ export default defineConfig({
       $types: path.join(__dirname, 'src/types/index.ts'),
       $context: path.join(__dirname, 'src/context'),
       $layout: path.join(__dirname, 'src/layout'),
-      $routes: path.join(__dirname, 'src/routes')
+      $routes: path.join(__dirname, 'src/routes'),
+      $webtorrent: path.join(__dirname, 'src/webtorrent.min.js')
     }
   },
 

@@ -22,7 +22,8 @@
       "$context/*": ["src/context/*"],
       "$layout/*": ["src/layout/*"],
       "$components/*": ["src/components/*"],
-      "$routes/*": ["src/routes/*"]
+      "$routes/*": ["src/routes/*"],
+      "$webtorrent": ["src/webtorrent.min.js"]
     }
   },
   "include": ["src", "@types"],

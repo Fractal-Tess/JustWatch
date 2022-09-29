@@ -25,6 +25,7 @@ importers:
       '@types/node': ^18.7.20
       '@types/react': ^18.0.21
       '@types/react-dom': ^18.0.6
+      '@types/webtorrent': ^0.109.3
       '@vitejs/plugin-react': ^2.1.0
       autoprefixer: ^10.4.12
       daisyui: ^2.31.0
@@ -53,6 +54,7 @@ importers:
       '@types/node': 18.7.23
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
+      '@types/webtorrent': 0.109.3
       '@vitejs/plugin-react': 2.1.0_vite@3.1.4
       autoprefixer: 10.4.12_postcss@8.4.16
       daisyui: 2.31.0_jhfe3rbur6kzimvcehnoniy6fy
@@ -691,6 +693,12 @@ packages:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
     dev: false
 
+  /@types/bittorrent-protocol/3.1.2:
+    resolution: {integrity: sha512-7k9nivNeG7Sc8wVuBs+XjBp2u7pH8tqW3BB93/SAg3xht/cZEK+Rqkj79xSyJqyj86eA0F6n85EKkkyGki8afg==}
+    dependencies:
+      '@types/node': 18.7.23
+    dev: true
+
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: true
@@ -699,8 +707,28 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
 
+  /@types/magnet-uri/5.1.3:
+    resolution: {integrity: sha512-FvJN1yYdLhvU6zWJ2YnWQ2GnpFLsA8bt+85WY0tLh6ehzGNrvBorjlcc53/zY43r/IKn+ctFs1nt7andwGnQCQ==}
+    dependencies:
+      '@types/node': 18.7.23
+    dev: true
+
   /@types/node/18.7.23:
     resolution: {integrity: sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==}
+    dev: true
+
+  /@types/parse-torrent-file/4.0.3:
+    resolution: {integrity: sha512-dFkPnJPKiFWiGX+HXmyTVt2js3k0d9dThmUxX8nfGC22hbyZ5BTmetsEl45sQhHLcFo43njVrIKMXM3F1ahXRw==}
+    dependencies:
+      '@types/node': 18.7.23
+    dev: true
+
+  /@types/parse-torrent/5.8.4:
+    resolution: {integrity: sha512-FdKs5yN5iYO5Cu9gVz1Zl30CbZe6HTsqloWmCf+LfbImgSzlsUkov2+npQWCQSQ3zi/a2G5C824K0UpZ2sRufA==}
+    dependencies:
+      '@types/magnet-uri': 5.1.3
+      '@types/node': 18.7.23
+      '@types/parse-torrent-file': 4.0.3
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -723,6 +751,21 @@ packages:
 
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
+    dev: true
+
+  /@types/simple-peer/9.11.5:
+    resolution: {integrity: sha512-haXgWcAa3Y3Sn+T8lzkE4ErQUpYzhW6Cz2lh00RhQTyWt+xZ3s87wJPztUxlqSdFRqGhe2MQIBd0XsyHP3No4w==}
+    dependencies:
+      '@types/node': 18.7.23
+    dev: true
+
+  /@types/webtorrent/0.109.3:
+    resolution: {integrity: sha512-EJLsxMEcEjPXHcBqL6TRAbUwIpxAul5ULrXHJ0zwig7Oe70FS6dAzCWLq4MBafX3QrQG1DzGAS0fS8iJEOjD0g==}
+    dependencies:
+      '@types/bittorrent-protocol': 3.1.2
+      '@types/node': 18.7.23
+      '@types/parse-torrent': 5.8.4
+      '@types/simple-peer': 9.11.5
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.38.1_c7qepppml3d4ahu5cnfwqe6ltq:

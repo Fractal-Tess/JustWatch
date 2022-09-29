@@ -7,6 +7,8 @@ import Blog from '$routes/Blog';
 import Contact from '$routes/Contact';
 
 function App() {
+  const d = new WebTorrent();
+
   return (
     <Routes>
       <Route element={<BaseLayout />}>

@@ -25,6 +25,6 @@
       "$routes/*": ["src/routes/*"]
     }
   },
-  "include": ["src", "node_modules/@types/webtorrent/index.d.ts"],
+  "include": ["src", "@types"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

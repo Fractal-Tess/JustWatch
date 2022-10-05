@@ -1,17 +1,5 @@
+import { navLinks } from '$routes/links';
 import { NavLink } from 'react-router-dom';
-
-type LinkType = {
-  to: string;
-  text: string;
-};
-
-const navLinks: LinkType[] = [
-  { text: 'Home', to: '/' },
-  { text: 'Blog', to: '/blog' },
-  { text: 'About', to: '/about' },
-  { text: 'Contact', to: '/contact' },
-  { text: 'Does not exist', to: '/foo-spam-eggs' }
-];
 
 export default function Nav() {
   return (

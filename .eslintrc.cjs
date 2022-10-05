@@ -5,7 +5,7 @@ module.exports = {
   settings: {
     next: {
       // Update this to point to any next apps
-      rootDir: ['apps/next'],
-    },
-  },
+      rootDir: ['apps/next']
+    }
+  }
 };

@@ -25,7 +25,7 @@ importers:
       '@fortawesome/free-regular-svg-icons': ^6.2.0
       '@fortawesome/free-solid-svg-icons': ^6.2.0
       '@fortawesome/react-fontawesome': ^0.2.0
-      '@types/node': ^18.8.0
+      '@types/node': ^18.8.2
       '@types/react': ^18.0.21
       '@types/react-dom': ^18.0.6
       '@types/webtorrent': ^0.109.3
@@ -34,7 +34,7 @@ importers:
       daisyui: ^2.31.0
       eslint: 8.24.0
       eslint-config-react: workspace:0.0.1
-      framer-motion: ^7.5.1
+      framer-motion: ^7.5.2
       postcss: ^8.4.17
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -54,7 +54,7 @@ importers:
       '@fortawesome/free-regular-svg-icons': 6.2.0
       '@fortawesome/free-solid-svg-icons': 6.2.0
       '@fortawesome/react-fontawesome': 0.2.0_6j2wdqxompc6mcokhxkpep2gqu
-      '@types/node': 18.8.0
+      '@types/node': 18.8.2
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
       '@types/webtorrent': 0.109.3
@@ -63,7 +63,7 @@ importers:
       daisyui: 2.31.0_5zjlt5w4ir2cay3te66iu3k3ji
       eslint: 8.24.0
       eslint-config-react: link:../../packages/eslint-config-react
-      framer-motion: 7.5.1_biqbaboplfbrettd7655fr4n2y
+      framer-motion: 7.5.2_biqbaboplfbrettd7655fr4n2y
       postcss: 8.4.17
       react-router-dom: 6.4.1_biqbaboplfbrettd7655fr4n2y
       tailwind-config: link:../../packages/tailwind-config
@@ -699,7 +699,7 @@ packages:
   /@types/bittorrent-protocol/3.1.2:
     resolution: {integrity: sha512-7k9nivNeG7Sc8wVuBs+XjBp2u7pH8tqW3BB93/SAg3xht/cZEK+Rqkj79xSyJqyj86eA0F6n85EKkkyGki8afg==}
     dependencies:
-      '@types/node': 18.8.0
+      '@types/node': 18.8.2
     dev: true
 
   /@types/json-schema/7.0.11:
@@ -713,24 +713,24 @@ packages:
   /@types/magnet-uri/5.1.3:
     resolution: {integrity: sha512-FvJN1yYdLhvU6zWJ2YnWQ2GnpFLsA8bt+85WY0tLh6ehzGNrvBorjlcc53/zY43r/IKn+ctFs1nt7andwGnQCQ==}
     dependencies:
-      '@types/node': 18.8.0
+      '@types/node': 18.8.2
     dev: true
 
-  /@types/node/18.8.0:
-    resolution: {integrity: sha512-u+h43R6U8xXDt2vzUaVP3VwjjLyOJk6uEciZS8OSyziUQGOwmk+l+4drxcsDboHXwyTaqS1INebghmWMRxq3LA==}
+  /@types/node/18.8.2:
+    resolution: {integrity: sha512-cRMwIgdDN43GO4xMWAfJAecYn8wV4JbsOGHNfNUIDiuYkUYAR5ec4Rj7IO2SAhFPEfpPtLtUTbbny/TCT7aDwA==}
     dev: true
 
   /@types/parse-torrent-file/4.0.3:
     resolution: {integrity: sha512-dFkPnJPKiFWiGX+HXmyTVt2js3k0d9dThmUxX8nfGC22hbyZ5BTmetsEl45sQhHLcFo43njVrIKMXM3F1ahXRw==}
     dependencies:
-      '@types/node': 18.8.0
+      '@types/node': 18.8.2
     dev: true
 
   /@types/parse-torrent/5.8.4:
     resolution: {integrity: sha512-FdKs5yN5iYO5Cu9gVz1Zl30CbZe6HTsqloWmCf+LfbImgSzlsUkov2+npQWCQSQ3zi/a2G5C824K0UpZ2sRufA==}
     dependencies:
       '@types/magnet-uri': 5.1.3
-      '@types/node': 18.8.0
+      '@types/node': 18.8.2
       '@types/parse-torrent-file': 4.0.3
     dev: true
 
@@ -759,14 +759,14 @@ packages:
   /@types/simple-peer/9.11.5:
     resolution: {integrity: sha512-haXgWcAa3Y3Sn+T8lzkE4ErQUpYzhW6Cz2lh00RhQTyWt+xZ3s87wJPztUxlqSdFRqGhe2MQIBd0XsyHP3No4w==}
     dependencies:
-      '@types/node': 18.8.0
+      '@types/node': 18.8.2
     dev: true
 
   /@types/webtorrent/0.109.3:
     resolution: {integrity: sha512-EJLsxMEcEjPXHcBqL6TRAbUwIpxAul5ULrXHJ0zwig7Oe70FS6dAzCWLq4MBafX3QrQG1DzGAS0fS8iJEOjD0g==}
     dependencies:
       '@types/bittorrent-protocol': 3.1.2
-      '@types/node': 18.8.0
+      '@types/node': 18.8.2
       '@types/parse-torrent': 5.8.4
       '@types/simple-peer': 9.11.5
     dev: true
@@ -1083,7 +1083,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.4
-      caniuse-lite: 1.0.30001414
+      caniuse-lite: 1.0.30001416
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1125,10 +1125,10 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001414
-      electron-to-chromium: 1.4.270
+      caniuse-lite: 1.0.30001416
+      electron-to-chromium: 1.4.272
       node-releases: 2.0.6
-      update-browserslist-db: 1.0.9_browserslist@4.21.4
+      update-browserslist-db: 1.0.10_browserslist@4.21.4
     dev: true
 
   /call-bind/1.0.2:
@@ -1150,8 +1150,8 @@ packages:
     resolution: {integrity: sha512-+TeEIee1gS5bYOiuf+PS/kp2mrXic37Hl66VY6EAfxasIk5fELTktK2oOezYed12H8w7jt3s512PpulQidPjwA==}
     dev: true
 
-  /caniuse-lite/1.0.30001414:
-    resolution: {integrity: sha512-t55jfSaWjCdocnFdKQoO+d2ct9C59UZg4dY3OnUlSZ447r8pUtIKdp0hpAzrGFultmTC+Us+KpKi4GZl/LXlFg==}
+  /caniuse-lite/1.0.30001416:
+    resolution: {integrity: sha512-06wzzdAkCPZO+Qm4e/eNghZBDfVNDsCgw33T27OwBH9unE9S478OYw//Q2L7Npf/zBzs7rjZOszIFQkwQKAEqA==}
     dev: true
 
   /chalk/2.4.2:
@@ -1377,8 +1377,8 @@ packages:
     dependencies:
       esutils: 2.0.3
 
-  /electron-to-chromium/1.4.270:
-    resolution: {integrity: sha512-KNhIzgLiJmDDC444dj9vEOpZEgsV96ult9Iff98Vanumn+ShJHd5se8aX6KeVxdc0YQeqdrezBZv89rleDbvSg==}
+  /electron-to-chromium/1.4.272:
+    resolution: {integrity: sha512-KS6gPPGNrzpVv9HzFVq+Etd0AjZEPr5pvaTBn2yD6KV4+cKW4I0CJoJNgmTG6gUQPAMZ4wIPtcOuoou3qFAZCA==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -2135,8 +2135,8 @@ packages:
       '@emotion/is-prop-valid': 0.8.8
     dev: true
 
-  /framer-motion/7.5.1_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-shqLAFgYT7QMVomusesPurlq9pQGLO64PTbWdQPkMg2cHmxI0ISG9BajGY3krg56yhBMI7QP/3u54bs/To0mOA==}
+  /framer-motion/7.5.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-HKQetVN92thmbl5ALDkmdr0xcTP6JD80l6rASs2g5e92zFkWYBE7rZLy++sbCq0L6JSviusb5t0txt19K8xSwg==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -3373,8 +3373,8 @@ packages:
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
 
-  /update-browserslist-db/1.0.9_browserslist@4.21.4:
-    resolution: {integrity: sha512-/xsqn21EGVdXI3EXSum1Yckj3ZVZugqyOZQ/CxYPBD/R+ko9NSUScf8tFF4dOKY+2pvSSJA/S+5B8s4Zr4kyvg==}
+  /update-browserslist-db/1.0.10_browserslist@4.21.4:
+    resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'

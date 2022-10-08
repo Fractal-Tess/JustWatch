@@ -1,17 +1,15 @@
-import { type PropsWithChildren } from 'react';
 import ThemeWrapper from '$layout/ThemeWrapper';
-import Header from './Header';
-import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
+import Sidebar from './Sidebar';
 
-export default function BaseLayout({ children: page }: PropsWithChildren) {
+export default function BaseLayout() {
   return (
     <ThemeWrapper>
-      <div className="bg-gradient-to-t from-base-300 to-base-100 min-h-screen flex flex-col justify-between">
-        <Header />
-        {page}
-        <Outlet />
-        <Footer />
+      <div className="bg-base-200 min-h-screen flex">
+        <Sidebar />
+        <main className="flex-1">
+          <Outlet />
+        </main>
       </div>
     </ThemeWrapper>
   );

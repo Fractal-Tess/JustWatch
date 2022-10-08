@@ -1,15 +1,17 @@
+import { Search } from 'ui';
+import { getSearch } from '$api';
+
 export default function Home() {
+  const onValueChange = (value: string) => {
+    getSearch(value);
+  };
+  const onSubmit = (value: string) => {
+    console.log(value);
+  };
+
   return (
-    <div className="flex-1 flex items-center justify-center flex-col space-y-8 text-5xl select-none">
-      <h1 className="text-6xl font-bold">
-        Welcome to{' '}
-        <span className="bg-primary text-primary-content p-1 rounded-md">
-          React.js
-        </span>
-      </h1>
-      <p className="border-b-4 border-primary border-dashed">
-        You should be coding...
-      </p>
+    <div className="min-h-full flex flex-col items-center py-8">
+      <Search onValueChange={onValueChange} onSubmit={onSubmit} />
     </div>
   );
 }

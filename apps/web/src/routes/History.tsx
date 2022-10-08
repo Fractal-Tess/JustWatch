@@ -4,13 +4,10 @@ export default function Home() {
       <h1 className="text-6xl font-bold">
         This is the{' '}
         <span className="bg-primary text-primary-content p-1 rounded-md">
-          Blog
+          History
         </span>{' '}
         Page
       </h1>
-      <p className="border-b-4 border-primary border-dashed">
-        You should be coding...
-      </p>
     </div>
   );
 }

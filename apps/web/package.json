@@ -1,11 +1,12 @@
 {
-  "name": "react",
+  "name": "web",
   "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",
     "dev": "vite build --watch",
+    "dev:vite": "vite dev",
     "lint": "tsc --noEmit && TIMING=1 eslint src/**/*.ts* --fix",
     "preview": "vite preview"
   },

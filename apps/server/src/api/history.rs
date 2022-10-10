@@ -1,2 +1,2 @@
-#[get("/api/history")]
+#[get("/history")]
 pub async fn history_route() {}

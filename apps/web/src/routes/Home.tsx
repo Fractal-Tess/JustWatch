@@ -1,9 +1,9 @@
 import { Search } from 'ui';
-import { getSearch } from '$api';
+import { query } from '$api';
 
 export default function Home() {
   const onValueChange = (value: string) => {
-    getSearch(value);
+    query(value);
   };
   const onSubmit = (value: string) => {
     console.log(value);

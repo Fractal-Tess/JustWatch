@@ -1,4 +1,8 @@
-extern crate rocket;
+mod history;
+mod recommendations;
+mod search;
+mod watchlist;
 
-#[get("/api/movie_list")]
-pub fn movie_list() {}
+pub use history::history_route;
+pub use recommendations::recommendations_route;
+pub use search::search_route;

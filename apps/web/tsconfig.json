@@ -19,7 +19,7 @@
     "paths": {
       "$styles": ["src/styles/index.css"],
       "$types": ["src/types/index.ts"],
-      "$context/*": ["src/context/*"],
+      "$provider/*": ["src/provider/*"],
       "$layout/*": ["src/layout/*"],
       "$components/*": ["src/components/*"],
       "$routes/*": ["src/routes/*"],

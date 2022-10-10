@@ -9,7 +9,7 @@ export default defineConfig({
     alias: {
       $styles: path.join(__dirname, 'src/styles/index.css'),
       $types: path.join(__dirname, 'src/types/index.ts'),
-      $context: path.join(__dirname, 'src/context'),
+      $provider: path.join(__dirname, 'src/provider'),
       $layout: path.join(__dirname, 'src/layout'),
       $routes: path.join(__dirname, 'src/routes'),
       $api: path.join(__dirname, 'src/api/index.ts')

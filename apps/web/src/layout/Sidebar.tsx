@@ -1,4 +1,4 @@
-import { ThemeCtx } from '$context/theme';
+import { ThemeCtx } from '$provider/Theme';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useContext } from 'react';

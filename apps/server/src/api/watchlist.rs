@@ -1,3 +1,5 @@
+#[allow(dead_code)]
+#[allow(unused)]
 #[get("/watchlist?<offset>&<count>")]
 pub async fn get_watchlist(offset: Option<u32>, count: Option<u32>) {}
 

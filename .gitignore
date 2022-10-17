@@ -15,5 +15,5 @@ out
 # Node
 node_modules
 
-
+# Sqlite database
 *.sqlite

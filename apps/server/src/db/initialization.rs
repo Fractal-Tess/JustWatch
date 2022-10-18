@@ -17,6 +17,12 @@ impl DB {
         rocket
     }
     pub fn stage() -> AdHoc {
-        AdHoc::on_ignite("Rusqlite Stage", |rocket| async { DB::init(rocket).await })
+        AdHoc::on_ignite("Rusqlite Stage", |rocket| async {
+            rocket
+                .attach(DB::fairing())
+                .attach(AdHoc::on_ignite("Rusqlite Init", |rocket| async {
+                    DB::init(rocket).await
+                }))
+        })
     }
 }

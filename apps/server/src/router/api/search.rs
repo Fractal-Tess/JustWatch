@@ -1,6 +1,7 @@
-use crate::db::DB;
+use crate::{db::DB, models::Models};
 
 #[get("/search?<query>&<ignore_cache>")]
 pub async fn search(query: String, ignore_cache: Option<bool>, db: DB) {
-    db.hello().await;
+    Models::test();
+    // Models::search(db, query, ignore_cache);
 }

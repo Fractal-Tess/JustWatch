@@ -1,5 +1,5 @@
 mod api;
-mod serve;
+mod webui;
 
 use rocket::fairing::AdHoc;
 
@@ -7,6 +7,6 @@ pub fn stage() -> AdHoc {
     AdHoc::on_ignite("Router stage", |rocket| async {
         rocket
             .mount("/api", api::routes())
-            .mount("/", routes![serve::serve])
+            .mount("/web", webui::routes())
     })
 }

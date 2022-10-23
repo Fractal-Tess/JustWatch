@@ -1,4 +1,5 @@
 use rocket::http::ContentType;
+use rocket::Route;
 use rust_embed::RustEmbed;
 use std::borrow::Cow;
 use std::ffi::OsStr;
@@ -9,7 +10,7 @@ use std::path::PathBuf;
 struct Asset;
 
 #[get("/<file..>")]
-pub fn serve(file: PathBuf) -> Option<(ContentType, Cow<'static, [u8]>)> {
+fn serve(file: PathBuf) -> Option<(ContentType, Cow<'static, [u8]>)> {
     let path = file.display().to_string();
     if path == "" {
         let asset = Asset::get("index.html")?;
@@ -24,4 +25,8 @@ pub fn serve(file: PathBuf) -> Option<(ContentType, Cow<'static, [u8]>)> {
         .unwrap_or(ContentType::Bytes);
 
     Some((content_type, asset.data))
+}
+
+pub fn routes() -> Vec<Route> {
+    routes![serve]
 }

@@ -1,10 +1,16 @@
 mod search;
 mod user;
 
-use rocket::response::Debug;
-use rocket_sync_db_pools::rusqlite;
+use std::path::PathBuf;
 
-#[allow(dead_code)]
-type Result<T, E = Debug<rusqlite::Error>> = std::result::Result<T, E>;
+use rocket::{fairing::AdHoc, response::Debug};
 
-pub struct Models;
+use rusqlite::{Connection, Result};
+
+pub struct Models {}
+
+impl Models {
+    pub fn stage() -> AdHoc {
+        AdHoc::on_ignite("Models stage", |rocket| async { rocket })
+    }
+}

@@ -1,5 +1,3 @@
-use crate::db::DB;
-
 use super::Models;
 
 impl Models {

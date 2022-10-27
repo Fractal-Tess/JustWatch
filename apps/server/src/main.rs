@@ -1,3 +1,4 @@
+use models::Models;
 use rocket::{Build, Rocket};
 
 #[macro_use]
@@ -10,6 +11,7 @@ mod router;
 #[launch]
 async fn rocket() -> Rocket<Build> {
     rocket::build()
-        .attach(crate::db::DB::stage())
-        .attach(crate::router::stage())
+        // .attach(db::DB::stage())
+        .attach(Models::stage())
+        .attach(router::stage())
 }

@@ -7,6 +7,6 @@ pub fn stage() -> AdHoc {
     AdHoc::on_ignite("Router stage", |rocket| async {
         rocket
             .mount("/api", api::routes())
-            .mount("/web", webui::routes())
+            .mount("/", webui::routes())
     })
 }

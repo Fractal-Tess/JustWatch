@@ -1,16 +1,24 @@
 mod search;
 mod user;
 
-use std::path::PathBuf;
+use crate::db::DB;
+use rocket::fairing::AdHoc;
+use std::sync::Mutex;
 
-use rocket::{fairing::AdHoc, response::Debug};
-
-use rusqlite::{Connection, Result};
-
-pub struct Models {}
+pub struct Models {
+    #[allow(dead_code)]
+    db: Mutex<DB>,
+}
 
 impl Models {
     pub fn stage() -> AdHoc {
-        AdHoc::on_ignite("Models stage", |rocket| async { rocket })
+        AdHoc::on_ignite("Models stage", |rocket| async {
+            let db = DB::new();
+
+            let models = Models {
+                db: Mutex::from(db),
+            };
+            rocket.manage(models)
+        })
     }
 }

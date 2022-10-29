@@ -1,7 +1,5 @@
 use crate::models::Models;
+use rocket::State;
 
-#[get("/search?<query>&<ignore_cache>")]
-pub async fn search(query: String, ignore_cache: Option<bool>) {
-    Models::test();
-    // Models::search(db, query, ignore_cache);
-}
+#[get("/search?<query>&<typehead>")]
+pub async fn search(query: String, typehead: Option<bool>, models: &State<Models>) {}

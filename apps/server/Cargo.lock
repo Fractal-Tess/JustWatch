@@ -680,18 +680,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "just-watch"
-version = "0.0.1"
-dependencies = [
- "reqwest",
- "rocket",
- "rusqlite",
- "rusqlite_migration",
- "rust-embed",
- "serde",
-]
-
-[[package]]
 name = "lazy_static"
 version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1389,6 +1377,18 @@ dependencies = [
  "form_urlencoded",
  "itoa",
  "ryu",
+ "serde",
+]
+
+[[package]]
+name = "server"
+version = "0.0.1"
+dependencies = [
+ "reqwest",
+ "rocket",
+ "rusqlite",
+ "rusqlite_migration",
+ "rust-embed",
  "serde",
 ]
 

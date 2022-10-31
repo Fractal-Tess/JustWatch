@@ -2,20 +2,20 @@ use rusqlite::Connection;
 use rusqlite_migration::{Migrations, M};
 
 #[cfg(test)]
-mod tests {
+mod test {
     use super::*;
-
     #[test]
     fn migrations_test() {
         assert!(DB::migrations().validate().is_ok());
     }
 }
+
 pub struct DB {
     pub conn: Connection,
 }
 
 impl DB {
-    fn migrations() -> Migrations<'static> {
+    pub fn migrations() -> Migrations<'static> {
         Migrations::new(vec![M::up(
             "CREATE TABLE IF NOT EXISTS film (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
